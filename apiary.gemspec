@@ -22,7 +22,9 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency "rest-client", "~> 1.8"
-  gem.add_dependency "rack", "~> 1.6.4"
+  # TODO - when rack 2.0 becomes stable, uncomment the next line and remove
+  # dependency in GGemfile
+  #gem.add_dependency "rack", "~> 2.0.0"
   gem.add_dependency "thor", "~> 0.19.1"
 
   gem.add_runtime_dependency "json", "~> 1.8"
